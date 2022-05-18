@@ -1,14 +1,17 @@
 <template>
-  <div>
-    <main>
+  <div class="main">
       <sidebar/>
       <NuxtPage/>
-    </main>
   </div>
 </template>
 
 
 <script setup lang="ts">
 
-
 </script>
+
+<style lang="scss" scoped>
+.main {
+  display: flex;
+}
+</style>

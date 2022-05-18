@@ -1,7 +1,10 @@
 <template>
-  <div>
-    123
-  </div>
+  <ContentLayout>
+    <div class="">
+      index
+    </div>
+  </ContentLayout>
+
 </template>
 
 <script setup>
