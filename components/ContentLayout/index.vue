@@ -1,5 +1,5 @@
 <template>
-  <div class="flex-1 mx-7 bg-amber-100 ">
+  <div class="flex-1 m-7 bg-amber-100 ">
     <slot/>
   </div>
 </template>
