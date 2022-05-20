@@ -23,7 +23,7 @@ pnpm dev
 </p>
 
 # Reference
-UI项目参考了 [yilia-plus](https://github.com/JoeyBling/hexo-theme-yilia-plus)
+UI 参考了 [yilia-plus](https://github.com/JoeyBling/hexo-theme-yilia-plus)
 
 # 补充
 **此博客只能算是个小demo，功能极不完善，请勿线上使用！！！**
