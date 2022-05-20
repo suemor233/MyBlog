@@ -8,13 +8,13 @@
       <div class="text-3xl font-serif mt-6 transition-all">
         <a href="/" class="text-gray-700 transition hover:text-gray-500">suemor</a>
       </div>
-      <ul class="text-md text-gray-500 p-7">
+      <ul class="side-header-tags text-md text-gray-500 p-7">
         <li v-for="item in pageTitle" :key="item" class="mt-2 cursor-pointer transition-all hover:text-gray-400">
           {{ item }}
         </li>
       </ul>
 
-      <div class="flex justify-around w-3/5 m-auto">
+      <div class="flex justify-around w-3/5 m-auto mt-3">
         <i v-for="icon in icons" :class="icon.icon" :style="{color:icon.color}"/>
       </div>
     </div>
@@ -53,16 +53,28 @@ const icons = [
 </script>
 <style lang="scss" scoped>
 .side {
+  @media (max-width: 768px) {
+    position: relative;
+    width: 100%;
+    background-color: #EAEAEA;
+
+  }
   &-overlay {
     position: absolute;
     background-color: #4d4d4d;
     width: 100%;
     height: 11em;
+    @media (max-width: 768px) {
+      height: 6.5em;
+    }
   }
 
   &-header {
     text-align: center;
-    margin: 112px auto;
+    margin: 8em auto;
+    @media (max-width: 768px) {
+      margin: .5em auto;
+    }
 
     &-avatar {
       position: relative;
@@ -76,6 +88,15 @@ const icons = [
         border-radius: 50%;
         border: 5px solid #fff;
       }
+    }
+
+    &-tags {
+      @media (max-width: 768px) {
+        display: flex;
+        justify-content: space-around;
+        padding: 1em 6em;
+      }
+
     }
   }
 

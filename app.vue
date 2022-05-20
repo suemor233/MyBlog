@@ -12,6 +12,9 @@
 
 <style lang="scss" scoped>
 .main {
-  display: flex;
+  @media (max-width: 750px) {
+    display: flex;
+    flex-direction: column;
+  }
 }
 </style>

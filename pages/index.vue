@@ -2,6 +2,10 @@
   <ContentLayout>
     <div class="">
       <ArticleCard/>
+      <ArticleCard/>
+      <ArticleCard/>
+      <ArticleCard/>
+      <ArticleCard/>
 
     </div>
 

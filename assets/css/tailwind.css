@@ -7,12 +7,30 @@
     /*font-size: calc(0.5em + 1vw);*/
     font-size: 1rem;
     background: #EAEAEA;
-    font-family: Menlo,Monaco,Andale Mono,lucida console,Courier New,monospace;
 
 }
 
-/*@media (min-width: 50em) {*/
-/*    :root {*/
-/*        font-size: 1.125em;*/
-/*    }*/
-/*}*/
+@media (max-width: 768px) {
+    :root {
+        font-size: 0.95em;
+    }
+}
+
+
+::-webkit-scrollbar {
+    width: 7px;
+    height: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+    height: 30px;
+    background-color: #999;
+    -webkit-border-radius: 7px;
+    outline-offset: -2px;
+}
+
+
+::-webkit-scrollbar-track-piece {
+    background-color: #EAEAEA;
+    -webkit-border-radius: 3px;
+}
