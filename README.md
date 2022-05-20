@@ -1,42 +1,32 @@
-# Nuxt 3 Minimal Starter
+## 采用 Nuxt3 编写的练手博客,目前正在开发中。。
 
-Look at the [nuxt 3 documentation](https://v3.nuxtjs.org) to learn more.
+使用了以下技术
 
-## Setup
+- Nuxt3
+- Vite
+- Vue3
+- Tailwindcss
+- Pinia
+- UmiRequest
 
-Make sure to install the dependencies:
+# 使用
 
-```bash
-# yarn
-yarn install
-
-# npm
-npm install
-
-# pnpm
-pnpm install --shamefully-hoist
+```sh
+pnpm i
+pnpm dev
 ```
 
-## Development Server
+# 截图
 
-Start the development server on http://localhost:3000
+<p align="middle">
+<img src="https://cdn.jsdelivr.net/gh/suemor233/static@main/img/Myblog-image1.jpg" width="1000" alt="主页" />
+</p>
 
-```bash
-npm run dev
-```
+# Reference
+项目参考了 [mx-admin](https://github.com/mx-space/mx-admin)
 
-## Production
+# 补充
+**此博客只能算是个小demo，功能极不完善，请勿线上使用！！！**
 
-Build the application for production:
 
-```bash
-npm run build
-```
-
-Locally preview production build:
-
-```bash
-npm run preview
-```
-
-Checkout the [deployment documentation](https://v3.nuxtjs.org/guide/deploy/presets) for more information.
+[博客后端仓库地址](https://github.com/suemor233/MyBlog-Server) 采用nestjs+typescript+prisma+mysql
