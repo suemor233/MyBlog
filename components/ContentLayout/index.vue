@@ -1,5 +1,5 @@
 <template>
-  <div class="flex-1 m-7">
+  <div class="content-right absolute  m-7">
     <slot/>
   </div>
 </template>
@@ -8,6 +8,9 @@
 
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 
+.content-right {
+  left: 18.5em;
+}
 </style>

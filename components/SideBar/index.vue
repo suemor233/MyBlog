@@ -1,5 +1,5 @@
 <template>
-  <div class="side w-72 bg-white h-screen relative">
+  <div class="side w-72 bg-white h-full fixed z-50 transition-all">
     <div class="side-overlay" />
     <div class="side-header">
       <a href="/" class="side-header-avatar">
