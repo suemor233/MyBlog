@@ -19,11 +19,11 @@ pnpm dev
 # 截图
 
 <p align="middle">
-<img src="https://cdn.jsdelivr.net/gh/suemor233/static@main/img/Myblog-image1.jpg" width="1000" alt="主页" />
+<img src="https://cdn.jsdelivr.net/gh/suemor233/static@main/img/image2.jpg" width="1000" alt="主页" />
 </p>
 
 # Reference
-项目参考了 [mx-admin](https://github.com/mx-space/mx-admin)
+UI项目参考了 [yilia-plus](https://github.com/JoeyBling/hexo-theme-yilia-plus)
 
 # 补充
 **此博客只能算是个小demo，功能极不完善，请勿线上使用！！！**

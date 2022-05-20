@@ -1,7 +1,7 @@
 <template>
   <div class="bg-white mt-5 ">
     <header class="header flex justify-between px-20 pt-10">
-      <h1 class="text-2xl text-gray-500 mb-3">Linux查看硬件信息</h1>
+      <h1 class="text-2xl text-gray-500 mb-3">初学 Nuxt3</h1>
       <div class="text-gray-500">
         <i class="fa-solid fa-calendar-days mr-2"/>
         <span>2022-05-19</span>
