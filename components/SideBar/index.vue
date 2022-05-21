@@ -1,21 +1,23 @@
 <template>
   <div class="side w-72 bg-white h-full fixed z-50 transition-all">
-    <div class="side-overlay" />
+    <div class="side-overlay"/>
     <div class="side-header">
       <a href="/" class="side-header-avatar">
-        <img src="https://suemor.oss-cn-beijing.aliyuncs.com/img/avatar.jpeg">
+        <img :src="user.userInfo.avatar">
       </a>
       <div class="text-3xl font-serif mt-6 transition-all">
-        <a href="/" class="text-gray-700 transition hover:text-gray-500">suemor</a>
+        <a href="/" class="text-gray-700 transition hover:text-gray-500">{{user.userInfo.username}}</a>
       </div>
       <ul class="side-header-tags text-md text-gray-500 p-7">
-        <li v-for="item in pageTitle" :key="item" class="mt-2 cursor-pointer transition-all hover:text-gray-400">
-          {{ item }}
-        </li>
-      </ul>
+        <div class="mt-2 transition-all" v-for="item in pageTitle" :key="item">
+          <li class="cursor-pointer transition-all hover:text-gray-400 inline">
+            {{ item }}
+          </li>
+        </div>
 
+      </ul>
       <div class="flex justify-around w-3/5 m-auto mt-3">
-        <i v-for="icon in icons" :class="icon.icon" :style="{color:icon.color}"/>
+        <a v-for="icon in icons" target="_blank" :key="icon.name" :class="icon.icon" :href="icon.url" :style="{color:icon.color}"/>
       </div>
     </div>
   </div>
@@ -23,33 +25,37 @@
 
 <script setup lang='ts'>
 
+import {useUserInfo} from "~/store/user"
+const user = useUserInfo()
 const pageTitle: string[] = ['主页', '归档', '标签', '关于', '友链']
-const icons = [
+
+//Todo 后端接口返回图标
+const icons = reactive([
   {
     name: 'github',
     icon: 'fa-brands fa-github',
-    url: 'https://github.com/suemor233',
-    color:'#000'
+    url: user.userInfo.github,
+    color: '#000'
   },
   {
     name: 'twitter',
     icon: 'fa-brands fa-twitter',
-    url: 'https://twitter.com/Suemor233',
+    url: user.userInfo.twitter,
     color: '#4AA1E7'
   },
   {
     name: 'qq',
     icon: 'fa-brands fa-qq',
-    url: 'https://wpa.qq.com/msgrd?v=3&uin=1502972236&site=qq&menu=yes',
+    url: user.userInfo.qq,
     color: '#55B4EF'
   },
   {
     name: 'bilibili',
     icon: 'fa-brands fa-bilibili',
-    url: 'https://github.com/suemor233',
+    url: user.userInfo.bilibili,
     color: '#479FD1'
   }
-]
+])
 </script>
 <style lang="scss" scoped>
 .side {
@@ -59,6 +65,7 @@ const icons = [
     background-color: #EAEAEA;
 
   }
+
   &-overlay {
     position: absolute;
     background-color: #4d4d4d;

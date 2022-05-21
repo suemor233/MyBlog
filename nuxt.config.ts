@@ -21,6 +21,11 @@ export default defineNuxtConfig({
                 },
             },
         },
-    }
-
+    },
+    publicRuntimeConfig: {
+        secret: process.env.SECRET || 'http://localhost:3371/api',
+    },
+    buildModules: [
+        '@pinia/nuxt',
+    ],
 })
