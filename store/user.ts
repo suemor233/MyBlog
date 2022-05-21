@@ -17,7 +17,7 @@ interface userInfoType {
     updateAt: string;
 }
 
-export const useUserInfo = defineStore('user', () => {
+export const useUser = defineStore('user', () => {
     const userInfo = reactive<userInfoType>({
             id: 0,
             username: '',
@@ -42,5 +42,5 @@ export const useUserInfo = defineStore('user', () => {
     }
 })
 if (import.meta.hot) {
-    import.meta.hot.accept(acceptHMRUpdate(useUserInfo, import.meta.hot))
+    import.meta.hot.accept(acceptHMRUpdate(useUser, import.meta.hot))
 }

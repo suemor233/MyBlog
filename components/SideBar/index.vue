@@ -6,7 +6,7 @@
         <img :src="user.userInfo.avatar">
       </a>
       <div class="text-3xl font-serif mt-6 transition-all">
-        <a href="/" class="text-gray-700 transition hover:text-gray-500">{{user.userInfo.username}}</a>
+        <a href="/" class="text-gray-700 transition hover:text-gray-500">{{ user.userInfo.username }}</a>
       </div>
       <ul class="side-header-tags text-md text-gray-500 p-7">
         <div class="mt-2 transition-all" v-for="item in pageTitle" :key="item">
@@ -14,10 +14,10 @@
             {{ item }}
           </li>
         </div>
-
       </ul>
       <div class="flex justify-around w-3/5 m-auto mt-3">
-        <a v-for="icon in icons" target="_blank" :key="icon.name" :class="icon.icon" :href="icon.url" :style="{color:icon.color}"/>
+        <a v-for="icon in icons" target="_blank" :key="icon.name" :class="icon.icon" :href="icon.url"
+           :style="{color:icon.color}"/>
       </div>
     </div>
   </div>
@@ -25,8 +25,9 @@
 
 <script setup lang='ts'>
 
-import {useUserInfo} from "~/store/user"
-const user = useUserInfo()
+import {useUser} from "~/store/user"
+
+const user = useUser()
 const pageTitle: string[] = ['主页', '归档', '标签', '关于', '友链']
 
 //Todo 后端接口返回图标

@@ -9,8 +9,8 @@ export interface ValueConfig {
 }
 
 const fetch = (url: string, options?: any): Promise<any> => {
-    const { secret} = useRuntimeConfig()
-    const reqUrl = secret + url
+    const { NUXT_PUBLIC_API_URL} = useRuntimeConfig()
+    const reqUrl = NUXT_PUBLIC_API_URL + url
     return new Promise((resolve, reject) => {
         useFetch(reqUrl, { ...options }).then(({ data, error }: any) => {
             if (error.value) {
