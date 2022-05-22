@@ -10,7 +10,7 @@
 
 <style lang="scss" scoped>
 .content-right {
-  margin-left: 19.5em;
+  margin-left: 22.5em;
 
   @media (max-width: 850px) {
     position: static;

@@ -8,7 +8,7 @@ export default defineNuxtConfig({
             {
                 href: 'https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css',
                 rel: 'stylesheet',
-            }
+            },
         ],
     },
     css: ["~/assets/css/tailwind.css", '@fortawesome/fontawesome-svg-core/styles.css'],
@@ -22,7 +22,7 @@ export default defineNuxtConfig({
             },
         },
 
-        transpile: ['moment', 
+        transpile: ['moment',
                     "naive-ui",
                     "vueuc",
                     "@css-render/vue3-ssr",
@@ -34,4 +34,5 @@ export default defineNuxtConfig({
     },
     buildModules: [
         '@pinia/nuxt'],
+
 })

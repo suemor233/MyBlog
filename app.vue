@@ -6,20 +6,18 @@
 </template>
 
 
-<script setup lang="ts">
+<script>
 
-onBeforeMount(() => {
-  const meta = document.createElement('meta')
-  meta.name = 'naive-ui-style'
-  document.head.appendChild(meta)
-})
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss" >
+@import url(@/assets/css/reset.css);
 .main {
   @media (max-width: 750px) {
     display: flex;
     flex-direction: column;
   }
 }
+
+
 </style>
