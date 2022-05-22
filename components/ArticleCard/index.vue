@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-white mt-5">
+  <div class="bg-white mb-5 rounded-md shadow-md">
     <header class="header flex justify-between px-20 pt-10">
       <h1 class="text-2xl text-gray-500 mb-3">{{ article.title }}</h1>
       <div class="text-gray-500">
@@ -47,7 +47,7 @@ const tags = computed(() => {
 <style lang="scss" scoped>
 .header {
   border-left: 5px solid #4d4d4d;
-
+  border-top-left-radius: 6px;
   @media (max-width: 850px) {
     flex-direction: column;
     padding-left: 1em;

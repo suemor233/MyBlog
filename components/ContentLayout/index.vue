@@ -1,6 +1,6 @@
 <template>
-  <div class="content-right px-5 m-7">
-    <slot />
+  <div class="content-right p-7">
+    <slot/>
   </div>
 </template>
 
@@ -9,13 +9,13 @@
 </script>
 
 <style lang="scss" scoped>
-.content-right {
-  margin-left: 22.5em;
 
-  @media (max-width: 850px) {
+.content-right {
+  margin-left: 20.5em;
+  @media (max-width: 768px) {
     position: static;
     margin: 0;
-
+    padding: .5em;
   }
 }
 </style>

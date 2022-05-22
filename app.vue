@@ -6,8 +6,8 @@
 </template>
 
 
-<script>
-
+<script setup>
+import { NButton } from "naive-ui";
 </script>
 
 <style lang="scss" >

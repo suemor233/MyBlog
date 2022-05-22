@@ -26,8 +26,6 @@
 <script setup lang='ts'>
 import { useUser } from '../../store/user';
 
-
-
 const user = useUser()
 const pageTitle: string[] = ['主页', '归档', '标签', '关于', '友链']
 
@@ -61,7 +59,8 @@ const icons = reactive([
 </script>
 <style lang="scss" scoped>
 .side {
-  @media (max-width: 850px) {
+
+  @media (max-width: 800px) {
     position: relative;
     width: 100%;
     background-color: #EAEAEA;
@@ -73,7 +72,7 @@ const icons = reactive([
     background-color: #4d4d4d;
     width: 100%;
     height: 11em;
-    @media (max-width: 850px) {
+    @media (max-width: 800px) {
       height: 6.5em;
     }
   }
@@ -81,7 +80,7 @@ const icons = reactive([
   &-header {
     text-align: center;
     margin: 8em auto;
-    @media (max-width: 850px) {
+    @media (max-width: 800px) {
       margin: .5em auto;
     }
 
@@ -100,7 +99,7 @@ const icons = reactive([
     }
 
     &-tags {
-      @media (max-width: 850px) {
+      @media (max-width: 800px) {
         display: flex;
         justify-content: space-around;
         padding: 1em 6em;
