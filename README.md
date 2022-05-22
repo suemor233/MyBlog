@@ -12,7 +12,7 @@
 # 使用
 
 ```sh
-pnpm i
+pnpm install --shamefully-hoist
 pnpm dev
 ```
 

@@ -18,11 +18,13 @@
     "unplugin-vue-components": "^0.19.5"
   },
   "dependencies": {
+    "@css-render/vue3-ssr": "^0.15.10",
     "@fortawesome/fontawesome-svg-core": "^6.1.1",
     "@fortawesome/free-regular-svg-icons": "^6.1.1",
     "@fortawesome/free-solid-svg-icons": "^6.1.1",
     "@fortawesome/vue-fontawesome": "3.0.0-5",
     "@pinia/nuxt": "^0.1.9",
+    "moment": "^2.29.3",
     "pinia": "^2.0.14",
     "sass": "^1.51.0"
   }

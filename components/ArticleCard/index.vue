@@ -4,7 +4,7 @@
       <h1 class="text-2xl text-gray-500 mb-3">{{ article.title }}</h1>
       <div class="text-gray-500">
         <i class="fa-solid fa-calendar-days mr-2" />
-        <span>2022-05-19</span>
+        <span>{{formatYearMonth(article.createAt)}}</span>
       </div>
     </header>
     <div class="main px-20 pt-2 leading-8">
@@ -32,15 +32,15 @@
 
 <script setup lang="ts">
 import { IArticleContent } from "~/store/types/articleType";
+import { formatYearMonth } from "~~/utils/format";
 
 const {article} = defineProps<{
   article: IArticleContent
 }>()
+
 const tags = computed(() => {
   return article.tags.split(',')
 })
-
-
 
 </script>
 
