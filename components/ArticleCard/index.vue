@@ -16,7 +16,6 @@
         <a class="" href="">more >></a>
       </div>
       <div class="footer flex">
-
         <i class="fa-solid fa-tag text-gray-400 mt-1"></i>
         <ul class="footer-tags ml-3">
           <li v-for="(tag,index) in tags" :key="index">{{tag}}</li>
